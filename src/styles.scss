@@ -47,6 +47,7 @@ body{
     border-radius: 15px;
     width: 225px;
     height: 400px;
+    cursor: pointer;
    }
 
 .tournois-boutton {
@@ -60,9 +61,34 @@ body{
     border-radius: 15px;
     width: 225px;
     height: 400px;
+    cursor: pointer;
+    position: relative;
     
        
 }
+
+.tournois-boutton:hover .texte{
+
+display: block;
+background-image: none;
+
+}
+
+.texte{
+    display: none; /* cache le texte par défaut */
+
+        transform: translateX(-0%); /* centre le texte horizontalement */
+        text-align: center;
+        
+}
+
+
+
+
+
+
+
+
 
 #leagues {
 
@@ -91,3 +117,4 @@ body{
     align-items: center;
   gap: 220px;
 }
+
