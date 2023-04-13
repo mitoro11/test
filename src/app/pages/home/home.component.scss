@@ -1,0 +1,120 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.cdnfonts.com/css/friz-quadrata-std');
+
+body{
+    overflow:hidden;  
+
+    display: flex;
+	align-items: center;
+	height: 100vh;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-image: 
+    linear-gradient(
+        rgba(26, 25, 25, 0.6), 
+        rgba(20, 20, 20, 0.6)
+    ),
+    url(https://cdna.artstation.com/p/assets/images/images/000/390/646/4k/alex-gonzales-sr-paintover.jpg?1420569632);
+}
+
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Friz Quadrata Std', sans-serif;
+    border-left: 1.5px solid orange; border-right: 1.5px solid orange; border-bottom: 1.5px solid orange;
+
+ }
+ 
+
+.leagues-boutton {
+    font-size: large;
+    font-family: 'Friz Quadrata Std', sans-serif;
+    border: 1px solid orange;
+    background-image: url(data:image/png;base64,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);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px ;
+    border-radius: 15px;
+    width: 225px;
+    height: 400px;
+    cursor: pointer;
+   }
+
+.tournois-boutton {
+    font-size: large;
+    font-family: 'Friz Quadrata Std', sans-serif;
+    border: 1px solid orange;
+    background-image: url(data:image/png;base64,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);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px ;
+    border-radius: 15px;
+    width: 225px;
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+    
+       
+}
+
+.tournois-boutton:hover .texte{
+
+display: block;
+background-image: none;
+
+}
+
+.texte{
+    display: none; /* cache le texte par défaut */
+
+        transform: translateX(-0%); /* centre le texte horizontalement */
+        text-align: center;
+        
+}
+
+
+
+
+
+
+
+
+
+#leagues {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#tournois{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; 
+}
+
+
+#all{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+  gap: 220px;
+}
+
